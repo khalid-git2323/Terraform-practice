@@ -5,3 +5,10 @@ resource "aws_instance" "name" {
     name="dev-1"
   }
 }
+resource "aws_vpc" "name" {
+    cidr_block = "10.0.0.0/16"
+   tags = {
+    name="devvpc" 
+   }
+    
+}
