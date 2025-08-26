@@ -6,8 +6,8 @@ provider "aws" {
 # 1️⃣ VPC
 resource "aws_vpc" "main" {
   cidr_block = "10.0.0.0/16"
-  enable_dns_support   = true     # ✅ Enable DNS resolution
-  enable_dns_hostnames = true     # ✅ Enable DNS hostnames
+  enable_dns_support   = true     # 
+  enable_dns_hostnames = true     # 
   tags = {
     Name = "main-vpc"
   }
@@ -90,7 +90,7 @@ resource "aws_security_group" "rds_sg" {
     from_port   = 3306
     to_port     = 3306
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"] # ⚠️ In production, replace with your IP range
+    cidr_blocks = ["0.0.0.0/0"] # 
   }
 
   egress {
