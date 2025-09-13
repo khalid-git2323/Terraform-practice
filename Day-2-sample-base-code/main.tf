@@ -4,5 +4,5 @@ resource "aws_instance" "name" {
   
 }
 resource "aws_s3_bucket" "my_bucket"{
-  bucket="lambdajamadar12312"
+  bucket="lambdajamadarnareshitveera"
 }
