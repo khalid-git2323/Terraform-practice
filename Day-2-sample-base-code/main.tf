@@ -3,3 +3,7 @@ resource "aws_instance" "name" {
     instance_type = "t3.micro"
   
 }
+resource "aws_s3_bucket" "my_bucket"
+{
+  bucket="lambdajamadar12312"
+}
